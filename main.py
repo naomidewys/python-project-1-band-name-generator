@@ -1,15 +1,13 @@
-#1. Create a greeting for your program.
-print("Welcome to the Band Name Generator.")
-print("Here we'll help you come up with a fun name for your band. To get started, please answer the following questions:")
-#2. Ask the user for the city that they grew up in.
-city = input("What city did you grow up in?\n")
-print(city)
-#3. Ask the user for the name of a pet.
-pet = input("What is the name of your pet?\n")
-print(pet)
-#4. Combine the name of their city and pet and show them their band name.
-print("Your new band name could be " + city + " " + pet + "!")
-#5. Make sure the input cursor shows on a new line:
-# Used \n to create a new line for the cursor
+import art
 
-# Solution: https://replit.com/@appbrewery/band-name-generator-end
+#Add header / greeting
+print(art.logo)
+print("Welcome to the Band Name Generator.")
+print("Create a band name by answering the following questions.")
+
+#Create answers from these questions
+city_name = input("What city did you grow up in?\n")
+pet_name = input("What is the name of your first pet?\n")
+
+#Generate band name
+print("Your band name is " + city_name + " " + pet_name + "!")
